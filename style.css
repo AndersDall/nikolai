@@ -1067,7 +1067,7 @@ img.image.wp-image-33.attachment-medium.size-medium {
   left: 25%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  width: 35%;
+  width: 30%;
   
 }
 
@@ -1077,7 +1077,7 @@ img.image.wp-image-33.attachment-medium.size-medium {
   left: 75%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  width: 30%;
+  width: 25%;
 }
 
 .rosapillow {
@@ -1086,7 +1086,7 @@ img.image.wp-image-33.attachment-medium.size-medium {
   left: 30%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  width: 30%;
+  width: 25%;
 }
 
 .donut {
@@ -1095,7 +1095,7 @@ img.image.wp-image-33.attachment-medium.size-medium {
   left: 70%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  width: 30%;
+  width: 25%;
 }  
 
 /*
@@ -1229,7 +1229,18 @@ a:active {
     max-width: 400px;
 }
 
+#metaslider_container_45 {
+   width: 1600px;
+    overflow: hidden;
+    height: 600px;
+      
+}
 
+
+.slides li img {
+    
+    
+}
 
 
 @media only screen and (min-width: 878px) {
@@ -1380,7 +1391,23 @@ a:active {
     background-position: center;
     background-size: cover;   
 }
+
 */
-      
+.slides li img {
+    display: block;
+   
+    margin-right: 600px;
+}
+
+/*     
+#metaslider_container_45 {
+    
+    
+    height: 600px;
+    background-position: center;
+        
+    
+}
+*/
 }
 
