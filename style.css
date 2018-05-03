@@ -54,6 +54,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
+html, body {
+    height: 100%;
+}
+
 html {
 	line-height: 1.15; /* 1 */
 	-webkit-text-size-adjust: 100%; /* 2 */
@@ -68,6 +72,7 @@ html {
 
 body {
 	margin: 0;
+        
 }
 
 /**
@@ -982,3 +987,400 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+/* LOGO placement */
+a.custom-logo-link {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 15%;
+}
+
+a.custom-logo-link img {
+  width: 100%;
+}
+
+/* Hide section */
+section.no-results.not-found {
+    display: none;
+}
+
+/* Style fontawesome icon */
+i.fas.fa-angle-down.fa-4x {
+  color: whitesmoke;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+
+/* placement items that can be manipulated */
+
+/*
+img.image.wp-image-35.attachment-medium.size-medium {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+  
+}
+
+img.image.wp-image-36.attachment-medium.size-medium {
+  position: absolute;
+  top: 25%;
+  left: 75%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+}
+
+img.image.wp-image-32.attachment-medium.size-medium {
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+}
+
+img.image.wp-image-33.attachment-medium.size-medium {
+  position: absolute;
+  top: 65%;
+  left: 70%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+}
+
+*/
+
+.redpillow {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+  
+}
+
+.greypillow {
+  position: absolute;
+  top: 25%;
+  left: 75%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+}
+
+.rosapillow {
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+}
+
+.donut {
+  position: absolute;
+  top: 65%;
+  left: 70%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+}  
+
+/*
+header {
+    height: 600px;
+    background-image: url("images/tarzanroom.jpg");
+    background-position: center;
+    background-size: cover;   
+}
+*/
+
+#masthead {
+    height: 600px;
+    background-image: url("images/tarzanroom.jpg");
+    background-position: center;
+    background-size: cover;   
+}
+
+/*
+#baggrund1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    z-index: 1000000;
+    background-color: orange;
+    opacity: .5;
+}
+
+#baggrund1 a {
+    background-color: blue;
+    display: block;
+    height: 700px;
+}
+*/
+
+nav {
+  text-align: center;
+  background-color: #FFFFCC;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  
+
+}
+
+nav li {
+  display: block;
+  margin: 20px;
+
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 20px;
+  
+}
+
+
+
+    
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: darkgrey;
+}
+
+a:active {
+    color: black;
+}
+
+.backgroundColor {
+    display: flex;
+    background-color: #F26D20;
+    justify-content: center;
+}
+
+.backgroundColor h2 {
+    color: whitesmoke;
+}
+
+.maxwidth {
+    max-width: 1000px;
+    text-align: center;
+}
+
+.maxwidth p {
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.infoFooter {
+    background-color: #FFFFCC;
+    margin: 30px;
+    padding: 15px;
+    padding-left: 54px;
+    padding-right: 54px;
+    
+}
+
+.infoFooter p {
+    background-color: #FFFFCC;
+    
+    text-align: center;
+}
+
+.site-footer {
+    background-color: #F26D20;
+    display: flex;
+    justify-content: center;
+}
+
+.whitebackground {
+    background-color: whitesmoke;
+    margin: 15px;
+    padding: 15px;
+    max-width: 400px;
+}
+
+
+
+
+@media only screen and (min-width: 878px) {
+    
+    .whitebackground {
+        height: 250px;
+        margin-top: 10px;
+        width: 500px;
+    }
+    
+    #what {
+        margin-left: 0;
+    }
+    
+    .gridcontainer1 {
+        display: grid;
+        grid-template-colums: 1fr 2fr; 
+        grid-template-areas:
+            "image1 text1";
+    }
+    
+    .gridimage1 {
+        grid-area: image1;
+        justify-self: start;
+         align-self: center;
+    }
+    
+    .gridtext1 {
+        grid-area: text1;
+        margin-right: 0;
+        
+    }
+    
+    
+    #opening {
+        text-align: right;
+        margin-right: 0;
+    }
+    
+    
+    
+    .gridcontainer2 {
+        display: grid;
+        grid-template-colums: 2fr 1fr; 
+        grid-template-areas:
+            "text2 image2";
+    }
+    
+    .gridimage2 {
+        grid-area: image2;
+        justify-self: end;
+         align-self: center;
+    }
+    
+    .gridtext2 {
+        grid-area: text2;
+        margin-left: 0;
+    }
+    
+    #prices {
+        
+        margin-left: 0;
+    }
+    
+    .gridcontainer3 {
+        display: grid;
+        grid-template-colums: 1fr 2fr; 
+        grid-template-areas:
+            "image3 text3";
+    }
+    
+    .gridimage3 {
+        grid-area: image3;
+        justify-self: start;
+         align-self: center;
+    }
+    
+    .gridtext3 {
+        grid-area: text3;
+        margin-right: 0;
+    }
+    
+    #parking {
+        text-align: right;
+        margin-right: 0;
+    }
+    
+    
+    .gridcontainer4 {
+        display: grid;
+        grid-template-colums: 2fr 1fr; 
+        grid-template-areas:
+            "text4 image4";
+    }
+    
+    .gridimage4 {
+        grid-area: image4;
+        justify-self: end;
+         align-self: center;
+    }
+    
+    .gridtext4 {
+        grid-area: text4;
+        margin-left: 0;
+    }
+    
+    
+    .gridcontainer5 {
+        display: grid;
+        grid-template-colums: 1fr 2fr; 
+        grid-template-areas:
+            "image5 text5";
+    }
+    
+    .gridimage5 {
+        grid-area: image5;
+        justify-self: center;
+         align-self: center;
+    }
+    
+    .gridtext5 {
+        grid-area: text5;
+        margin-right: 0;
+        
+    }
+    
+    #nice {        
+        margin-left: 0;
+    }
+    
+    
+    
+    
+    nav li {
+        display: inline;
+    }
+      
+    .backgroundColor h2 {
+    display: block;
+    text-align: left;
+    margin: 30px;
+    }
+    
+    /*
+    header {
+    height: 700px;
+    background-image: url("images/tarzanroom.jpg");
+    background-position: center;
+    background-size: cover;   
+}
+*/
+      
+}
+
