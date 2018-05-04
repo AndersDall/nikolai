@@ -1198,8 +1198,18 @@ a:active {
 .maxwidth p {
     margin-left: 20px;
     margin-right: 20px;
+   
     
 }
+
+.maxwidth img {
+    width: 100%;
+    max-width: 430px;
+    height: auto;
+    padding: 15px;
+}
+
+
 
 .infoFooter {
     background-color: #FFFFCC;
@@ -1229,18 +1239,20 @@ a:active {
     max-width: 400px;
 }
 
+/*
 #metaslider_container_45 {
    width: 1600px;
     overflow: hidden;
     height: 600px;
-      
+    background-position: center;  
+}
+*/
+
+body .metaslider .coin-slider, body .metaslider .nivoSlider, body .metaslider .nivoSlider img, body .metaslider .rslides, body .metaslider .rslides li, body .metaslider .flexslider ul.slides, body .metaslider .flexslider .slides li, body .metaslider .flexslider .slides ul, body .metaslider .flexslider .slides ol, body .metaslider .flexslider .slides img, body .metaslider .flexslider .flex-direction-nav, body .metaslider .flexslider .flex-direction-nav li {
+    height: 600px;
+    
 }
 
-
-.slides li img {
-    
-    
-}
 
 
 @media only screen and (min-width: 878px) {
@@ -1249,6 +1261,21 @@ a:active {
         height: 250px;
         margin-top: 10px;
         width: 500px;
+    }
+    
+    .whitebackground p {
+        position: relative;
+        float: left;
+        top: 40%;
+transform: translateY(-50%); 
+    }
+    
+    .whitebackground table {
+        padding: 50px;
+    }
+    
+    .gridcontainer4 p {
+        margin-left: 85px;
     }
     
     #what {
@@ -1270,14 +1297,14 @@ a:active {
     
     .gridtext1 {
         grid-area: text1;
-        margin-right: 0;
+       
         
     }
     
     
     #opening {
         text-align: right;
-        margin-right: 0;
+       
     }
     
     
@@ -1365,6 +1392,8 @@ a:active {
         grid-area: text5;
         margin-right: 0;
         
+        
+        
     }
     
     #nice {        
@@ -1399,15 +1428,11 @@ a:active {
     margin-right: 600px;
 }
 
-/*     
-#metaslider_container_45 {
+.maxwidth img {
+    width: 270px;
+    padding: 10px;
     
-    
-    height: 600px;
-    background-position: center;
-        
-    
-}
-*/
+
 }
 
+}

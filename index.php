@@ -19,8 +19,13 @@ get_header();
 		<main id="main" class="site-main">
                   
                 
-                  <nav class="menu">
-                    
+                  <nav id="site-navigation" class="main-navigation menu">
+                        <?php
+			wp_nav_menu( array(
+				'theme_location' => 'menu-1',
+				'menu_id'        => 'primary-menu',
+			) );
+			?>   
                       <li><a href="#what">What is Nicolai</a></li>
                       <li><a href="#opening">Opening hours</a></li>
                       <li><a href="#prices">Prices</a></li>
@@ -34,14 +39,13 @@ get_header();
                             <h2 id="what">What is Nikolai</h2>
                             <div class="gridcontainer1">
                                 <div class="images gridimage1">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/kridt.jpg" alt="picture of chaclk">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/whatis.jpg" alt="picture of Nikolai for born">
                                 </div>
                                 <div class="whitebackground gridtext1">
                                     <p>Nikolai for børn is an attraction and an experience universe for children age 2-12. Not seen
                                         alike many places in Denmark or even Europe.
                                         It is 1300 m2 specific adapted for activity for children and creativity.
-                                        No access for for adults without children or children without adults. There is not many
-                                        rules in Nikolai for børn, but the responsibility lies within the adults.
+                                        No access for for adults without children or children without adults. 
                                        </p>
                                 </div>
                             </div> <!-- end gridcontainer-->
@@ -51,7 +55,7 @@ get_header();
                             <h2 id="opening">Opening hours</h2>
                             <div class="gridcontainer2">
                                 <div class="images gridimage2">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/lightflower.jpg" alt="picture of flower">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/window.jpg" alt="picture of flower">
                                 </div>
                                 <div class="whitebackground gridtext2">
 
@@ -77,7 +81,7 @@ get_header();
                             <h2 id="prices">Prices</h2>
                             <div class="gridcontainer3">
                                 <div class="images gridimage3">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/priser.jpg" alt="picture of a kids hand">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/stair.jpg" alt="picture of a kids hand">
                                 </div>
                                 <div class="whitebackground gridtext3"> 
                                     <table>
@@ -105,11 +109,13 @@ get_header();
                                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/parkering.jpg" alt="picture of parking map ">
                                 </div>
                                 <div class="whitebackground gridtext4">
+                                    
                                     <p>Parking nearby is possible:<br>
                                         click to show map<br>
                                         <a href="https://www.google.com/maps/search/nikolai+for+b%C3%B8rn+parkering/@55.4909041,9.4683252,17z/data=!3m1!4b1" target="_blank">Låsbybanke parkeringsplads</a><br>
                                         <a href="https://www.google.com/maps/search/nikolai+for+b%C3%B8rn+parkering/@55.4909041,9.4683252,17z/data=!3m1!4b1" target="_blank">Midtgården parkeringsplads</a><br>
                                         <a href="https://www.google.com/maps/search/nikolai+for+b%C3%B8rn+parkering/@55.4909041,9.4683252,17z/data=!3m1!4b1" target="_blank">Borchs Gård parkeringsplads</a></p>
+                                  
                                 </div>
                             </div>  <!-- end gridcontainer--> 
                         </div>
@@ -118,7 +124,7 @@ get_header();
                             <h2 id="nice">Nice to know</h2>
                             <div class="gridcontainer5">
                                 <div class="images gridimage5">
-                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/pizza.jpg" alt="picture of ">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/cafe.jpg" alt="picture of ">
                                 </div>    
                                 <div class="whitebackground gridtext5">
                                     <p>If you’ve brought your own lunch you’re free to enjoy it in the Grotto or outside in the Nicolai Court. You can also visit Nicolai Café and try their delicious sandwiches and salads. Children eat at half price. </p>
