@@ -54,8 +54,13 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
+
+/* ADA har tilføjet, max-width, margin, background-color*/
 html, body {
     height: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #FFFFCC;
 }
 
 html {
@@ -646,6 +651,7 @@ a:hover, a:active {
 	display: block;
 	float: left;
 	width: 100%;
+       
 }
 
 .main-navigation ul {
@@ -684,8 +690,10 @@ a:hover, a:active {
 }
 
 .main-navigation li {
+        /*
 	float: left;
-	position: relative;
+        */
+	
 }
 
 .main-navigation a {
@@ -694,12 +702,15 @@ a:hover, a:active {
 }
 
 /* Small menu. */
+
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
 }
 
-@media screen and (min-width: 37.5em) {
+/*
+
+@media screen and (min-width: 1em) {
 	.menu-toggle {
 		display: none;
 	}
@@ -707,6 +718,8 @@ a:hover, a:active {
 		display: block;
 	}
 }
+*/
+
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -1002,6 +1015,33 @@ a.custom-logo-link img {
   width: 100%;
 }
 
+/* Title */
+.custom-logo-link {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+  background-color: whitesmoke;
+  opacity: .8;
+  text-align: center;  
+  display: none;
+}
+
+
+.site-description {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 10%;
+  
+  text-align: center;  
+}
+
+
 /* Hide section */
 section.no-results.not-found {
     display: none;
@@ -1011,7 +1051,7 @@ section.no-results.not-found {
 i.fas.fa-angle-down.fa-4x {
   color: whitesmoke;
   position: absolute;
-  top: 80%;
+  top: 77%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -1067,7 +1107,7 @@ img.image.wp-image-33.attachment-medium.size-medium {
   left: 25%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  width: 30%;
+  width: 50%;
   
 }
 
@@ -1077,25 +1117,25 @@ img.image.wp-image-33.attachment-medium.size-medium {
   left: 75%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  width: 25%;
+  width: 45%;
 }
 
 .rosapillow {
   position: absolute;
-  top: 70%;
+  top: 65%;
   left: 30%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  width: 25%;
+  width: 40%;
 }
 
 .donut {
   position: absolute;
-  top: 65%;
+  top: 60%;
   left: 70%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  width: 25%;
+  width: 40%;
 }  
 
 /*
@@ -1106,6 +1146,8 @@ header {
     background-size: cover;   
 }
 */
+
+
 
 #masthead {
     height: 600px;
@@ -1133,30 +1175,34 @@ header {
 }
 */
 
-nav {
+
+#mainmenu {
   text-align: center;
   background-color: #FFFFCC;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   
 
 }
 
-nav li {
+#mainmenu li {
+       
   display: block;
   margin: 20px;
-
+  text-align: center;
 }
 
-nav li a {
+#mainmenu li a {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
   font-size: 20px;
-  
+  text-align: center;
 }
 
-
+#what {
+        margin-top: 50px;
+    }
 
     
 
@@ -1211,6 +1257,7 @@ a:active {
 
 
 
+/* MIN STYLING I FOOTER.PHP
 .infoFooter {
     background-color: #FFFFCC;
     margin: 30px;
@@ -1232,11 +1279,35 @@ a:active {
     justify-content: center;
 }
 
+*/
+
+/* MIN STYLING FOOTER I WIDGET AREA*/
+.site-footer {
+    background-color: #FFFFCC;
+    text-align: center;
+    padding: 1em;
+}
+
+.sfsi_widget {
+    display: flex;
+    justify-content: center;
+}
+
+.sfsi_widget img {
+    color: black;
+}
+
 .whitebackground {
     background-color: whitesmoke;
     margin: 15px;
+    margin-bottom: 50px;
     padding: 15px;
     max-width: 400px;
+}
+
+/* Styling bottum text area */
+.gridtext5 {
+    
 }
 
 /*
@@ -1247,15 +1318,67 @@ a:active {
     background-position: center;  
 }
 */
-
+ 
 body .metaslider .coin-slider, body .metaslider .nivoSlider, body .metaslider .nivoSlider img, body .metaslider .rslides, body .metaslider .rslides li, body .metaslider .flexslider ul.slides, body .metaslider .flexslider .slides li, body .metaslider .flexslider .slides ul, body .metaslider .flexslider .slides ol, body .metaslider .flexslider .slides img, body .metaslider .flexslider .flex-direction-nav, body .metaslider .flexslider .flex-direction-nav li {
     height: 600px;
-    
-}
-
+    opacity: 0;
+    }
 
 
 @media only screen and (min-width: 878px) {
+    
+    i.fas.fa-angle-down.fa-4x {
+    color: whitesmoke;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); 
+  }
+
+    .maxwidth img {
+        width: 100%;
+        max-width: 430px;
+        height: auto;
+        margin-bottom: 50px; /* To add same margin as the text*/
+        }
+    
+    .redpillow {
+        position: absolute;
+        top: 20%;
+        left: 25%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        width: 30%;
+      }
+
+      .greypillow {
+        position: absolute;
+        top: 25%;
+        left: 75%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        width: 25%;
+      }
+
+      .rosapillow {
+        position: absolute;
+        top: 70%;
+        left: 30%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        width: 25%;
+      }
+
+      .donut {
+        position: absolute;
+        top: 65%;
+        left: 70%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        width: 25%;
+      }  
+
     
     .whitebackground {
         height: 250px;
@@ -1267,7 +1390,7 @@ body .metaslider .coin-slider, body .metaslider .nivoSlider, body .metaslider .n
         position: relative;
         float: left;
         top: 40%;
-transform: translateY(-50%); 
+        transform: translateY(-50%); 
     }
     
     .whitebackground table {
@@ -1278,8 +1401,12 @@ transform: translateY(-50%);
         margin-left: 85px;
     }
     
+    .maxwidth img {
+        padding: 10px 10px 10px 10px;
+    }
+    
     #what {
-        margin-left: 0;
+        margin-left: 10px;
     }
     
     .gridcontainer1 {
@@ -1292,19 +1419,18 @@ transform: translateY(-50%);
     .gridimage1 {
         grid-area: image1;
         justify-self: start;
-         align-self: center;
+        align-self: center; 
     }
     
+    
+    
     .gridtext1 {
-        grid-area: text1;
-       
-        
+        grid-area: text1;        
     }
     
     
     #opening {
-        text-align: right;
-       
+        text-align: right;       
     }
     
     
@@ -1324,12 +1450,12 @@ transform: translateY(-50%);
     
     .gridtext2 {
         grid-area: text2;
-        margin-left: 0;
+        margin-left: 8px;
     }
     
     #prices {
         
-        margin-left: 0;
+        margin-left: 10px;
     }
     
     .gridcontainer3 {
@@ -1352,7 +1478,7 @@ transform: translateY(-50%);
     
     #parking {
         text-align: right;
-        margin-right: 0;
+        
     }
     
     
@@ -1371,7 +1497,7 @@ transform: translateY(-50%);
     
     .gridtext4 {
         grid-area: text4;
-        margin-left: 0;
+        margin-left: 10px;
     }
     
     
@@ -1390,49 +1516,122 @@ transform: translateY(-50%);
     
     .gridtext5 {
         grid-area: text5;
-        margin-right: 0;
-        
-        
-        
+        margin-right: 0;    
     }
     
     #nice {        
-        margin-left: 0;
+        margin-left: 10px;
     }
     
     
     
     
-    nav li {
+    #mainmenu li {
+        
+	
+        text-align: center;
         display: inline;
-    }
+        margin: 20px;
+        
+      }
+    /*
+      #site-navigation {
+          margin: 0 auto;
+      }
+    */
       
     .backgroundColor h2 {
     display: block;
     text-align: left;
-    margin: 30px;
+    margin: 10px;
     }
     
-    /*
-    header {
-    height: 700px;
+    
+    #masthead {
+    height: 750px;
     background-image: url("images/tarzanroom.jpg");
     background-position: center;
     background-size: cover;   
 }
 
-*/
+
+/*
 .slides li img {
     display: block;
    
     margin-right: 600px;
 }
+*/
 
 .maxwidth img {
     width: 270px;
-    padding: 10px;
     
+    }
+ 
+    
+    body .metaslider .coin-slider, body .metaslider .nivoSlider, body .metaslider .nivoSlider img, body .metaslider .rslides, body .metaslider .rslides li, body .metaslider .flexslider ul.slides, body .metaslider .flexslider .slides li, body .metaslider .flexslider .slides ul, body .metaslider .flexslider .slides ol, body .metaslider .flexslider .slides img, body .metaslider .flexslider .flex-direction-nav, body .metaslider .flexslider .flex-direction-nav li {
+    height: 750px;
+    opacity: 1;
+    }
+
+
 
 }
 
+@media only screen and (min-width: 1200px) {
+    
+    .redpillow {
+        position: absolute;
+        top: 20%;
+        left: 25%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        width: 25%;
+
+      }
+
+      .greypillow {
+        position: absolute;
+        top: 25%;
+        left: 75%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        width: 25%;
+      }
+
+      .rosapillow {
+        position: absolute;
+        top: 70%;
+        left: 30%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        width: 25%;
+      }
+
+      .donut {
+        position: absolute;
+        top: 65%;
+        left: 70%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        width: 25%;
+      }  
+
+    
+    
+   
+    #masthead {
+    height: 900px;
+    background-image: url("images/tarzanroom.jpg");
+    background-position: center;
+    background-size: cover;   
 }
+
+   
+    body .metaslider .coin-slider, body .metaslider .nivoSlider, body .metaslider .nivoSlider img, body .metaslider .rslides, body .metaslider .rslides li, body .metaslider .flexslider ul.slides, body .metaslider .flexslider .slides li, body .metaslider .flexslider .slides ul, body .metaslider .flexslider .slides ol, body .metaslider .flexslider .slides img, body .metaslider .flexslider .flex-direction-nav, body .metaslider .flexslider .flex-direction-nav li {
+    height: 900px;
+    opacity: 1;
+    }
+
+}
+

@@ -18,25 +18,24 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
                   
-                
-                  <nav id="site-navigation" class="main-navigation menu">
-                        <?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>   
+                  
+                  <nav id="mainmenu" class="menu">
+                        
+                      
                       <li><a href="#what">What is Nicolai</a></li>
                       <li><a href="#opening">Opening hours</a></li>
                       <li><a href="#prices">Prices</a></li>
                       <li><a href="#parking">Parking nearby</a></li>
                       <li><a href="#nice">Nice to know</a></li>
-                    
+                      
                   </nav>
+                  
+                    
                     <div class="backgroundColor">
+                    
                         <div class="maxwidth">
-                        <div>
-                            <h2 id="what">What is Nikolai</h2>
+                        <article>
+                            <h2 id="what" class="positiontitle">What is Nikolai</h2>
                             <div class="gridcontainer1">
                                 <div class="images gridimage1">
                                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/whatis.jpg" alt="picture of Nikolai for born">
@@ -48,10 +47,10 @@ get_header();
                                         No access for for adults without children or children without adults. 
                                        </p>
                                 </div>
-                            </div> <!-- end gridcontainer-->
-                        </div>
+                            </div> <!-- end gridcontainer -->
+                        </article>
 
-                        <div>
+                        <article>
                             <h2 id="opening">Opening hours</h2>
                             <div class="gridcontainer2">
                                 <div class="images gridimage2">
@@ -74,10 +73,10 @@ get_header();
                                       </tr>
                                      </table>
                                 </div>
-                            </div>  <!-- end gridcontainer-->  
-                        </div>
+                            </div>  <!-- end gridcontainer --> 
+                        </article>
 
-                        <div>
+                        <article>
                             <h2 id="prices">Prices</h2>
                             <div class="gridcontainer3">
                                 <div class="images gridimage3">
@@ -99,10 +98,10 @@ get_header();
                                       </tr>
                                      </table>
                                 </div>
-                            </div>  <!-- end gridcontainer-->     
-                        </div>
+                            </div>  <!-- end gridcontainer -->   
+                        </article>
 
-                        <div>
+                        <article>
                             <h2 id="parking">Parking nearby</h2>
                             <div class="gridcontainer4">
                                 <div class="images gridimage4">
@@ -117,10 +116,10 @@ get_header();
                                         <a href="https://www.google.com/maps/search/nikolai+for+b%C3%B8rn+parkering/@55.4909041,9.4683252,17z/data=!3m1!4b1" target="_blank">Borchs Gård parkeringsplads</a></p>
                                   
                                 </div>
-                            </div>  <!-- end gridcontainer--> 
-                        </div>
+                            </div>  <!-- end gridcontainer -->
+                        </article>
 
-                        <div>
+                        <article>
                             <h2 id="nice">Nice to know</h2>
                             <div class="gridcontainer5">
                                 <div class="images gridimage5">
@@ -130,10 +129,10 @@ get_header();
                                     <p>If you’ve brought your own lunch you’re free to enjoy it in the Grotto or outside in the Nicolai Court. You can also visit Nicolai Café and try their delicious sandwiches and salads. Children eat at half price. </p>
 
                                 </div>
-                            </div>  <!-- end gridcontainer--> 
-                        </div>    
+                            </div>  <!-- end gridcontainer -->
+                        </article>    
                        </div> <!-- end maxwidth -->
-                    </div> <!-- end backgroundcolor -->
+                   </div> <!-- end backgroundcolor -->
                 
         	<?php
 		if ( have_posts() ) :
@@ -176,6 +175,7 @@ get_header();
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
        
 
 <?php

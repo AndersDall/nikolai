@@ -57,7 +57,8 @@
                 <img id="leftbottumimage" class="rosapillow" onclick="change2();" src="<?php bloginfo('template_url'); ?>/images/rosapillow.png" alt="picture of a rosa pillow">
                 <img id="rightbottumimage" class="donut" onclick="change3();" src="<?php bloginfo('template_url'); ?>/images/donut.png" alt="picture of a donut pillow">
                 
-                
+                <!-- #site-navigation -->
+                <a href="#mainmenu" rel="Scrolldown"><i class="fas fa-angle-down fa-4x"></i></a>
                 
                 <script>
                    
@@ -120,25 +121,26 @@
                             image_tracker = 'donut';
                             }                                               
                         } 
-                
-                </script>
                         
-                <a href="#main" rel="Scrolldown"><i class="fas fa-angle-down fa-4x"></i></a>
-                
+              
+                     
+                </script>
+                 
                 <!--
 		<nav id="site-navigation" class="main-navigation">
+                        
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'nikolai' ); ?></button>
-			<?php
+			
+                        
+                        <?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',
 				'menu_id'        => 'primary-menu',
 			) );
 			?>                      
-		</nav> -->
-                <!-- #site-navigation -->
-                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('images') ) : 
- 
-                endif; ?>
+		</nav>
+                -->
+                
                 
 	</header><!-- #masthead -->
 

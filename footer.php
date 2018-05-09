@@ -14,10 +14,15 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
+            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('images') ) : 
+ 
+                endif; ?>
+                
 		<div class="site-info">
+                    <!--
                     <div class="infoFooter">
                         <p>Nicolai for Børn - Skolegade 2C - 6000 Kolding - T: 79797575 - nfb@kolding.dk</p>
-                    </div>
+                    </div> -->
 			<!-- <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'nikolai' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
